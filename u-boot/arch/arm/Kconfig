@@ -902,11 +902,7 @@ config TARGET_THUNDERX_88XX
 
 endchoice
 
-source "arch/arm/mach-stm32/Kconfig"
 source "arch/arm/cpu/armv7/Kconfig"
-source "arch/arm/cpu/armv8/zynqmp/Kconfig"
-source "arch/arm/cpu/armv8/Kconfig"
-
 source "board/sunxi/Kconfig"
 source "arch/arm/Kconfig.debug"
 
