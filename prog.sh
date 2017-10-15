@@ -27,6 +27,44 @@ then
 	else
 	       echo "$CONFIG_FILE1&$CONFIG_FILE2 is not"
 	fi
+        
+        find . -name "*.o"  | xargs rm -f
+        find . -name "*.su"  | xargs rm -f
+        find . -name "*.cmd"  | xargs rm -f
+        find . -name "*.tmp"  | xargs rm -f
+        find . -name "*.old"  | xargs rm -f
+        find . -name "*.srec"  | xargs rm -f
+        find . -name "*.sym"  | xargs rm -f
+        find . -name "*.dtb"  | xargs rm -f
+
+	cp u-boot-sunxi-with-spl.bin ../u-boot-sunxi-with-spl.bin
+        cd ../
+        rm prog.sh~
+	rm u-boot/.config
+	rm u-boot/System.map
+	rm u-boot/arch/arm/lib/asm-offsets.s
+	rm u-boot/arch/arm/lib/lib.a
+	rm u-boot/lib/asm-offsets.s
+	rm u-boot/lib/efi_loader/helloworld.efi
+	rm u-boot/lib/efi_loader/helloworld.so
+	rm u-boot/u-boot-dtb.bin
+	rm u-boot/u-boot-dtb.img
+	rm u-boot/u-boot-nodtb.bin
+	rm u-boot/u-boot-sunxi-with-spl.bin
+	rm u-boot/u-boot.bin
+	rm u-boot/u-boot.cfg
+	rm u-boot/u-boot.cfg.adhoc
+	rm u-boot/u-boot.cfg.configs
+	rm u-boot/u-boot.cfg.ok
+	rm u-boot/u-boot.cfg.suspects
+	rm u-boot/u-boot.img
+	rm u-boot/u-boot.map
+        rm u-boot/u-boot.lds
+
+	rm -rf u-boot/include/config/
+	rm -rf u-boot/include/generated/
+	rm -rf u-boot/spl/
+	rm -rf u-boot/u-boot
 else
         echo "no files..."
 fi
