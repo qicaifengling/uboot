@@ -37,7 +37,7 @@ then
         find . -name "*.sym"  | xargs rm -f
         find . -name "*.dtb"  | xargs rm -f
 
-	cp u-boot-sunxi-with-spl.bin ../u-boot-sunxi-with-spl.bin
+	#cp u-boot-sunxi-with-spl.bin ../u-boot-sunxi-with-spl.bin
         cd ../
         rm prog.sh~
 	rm u-boot/.config

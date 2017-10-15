@@ -176,7 +176,7 @@ static int sunxi_spi_claim_bus(struct udevice *dev)
 {
 	struct udevice *bus = dev->parent;
 	struct sunxi_spi_priv *priv = dev_get_priv(bus);
-	unsigned int pin_func = SUNXI_GPC_SPI0;
+	//unsigned int pin_func = SUNXI_GPC_SPI0;
 
 	debug("%s: claiming bus\n", __func__);
 
