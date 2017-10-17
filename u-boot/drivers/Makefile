@@ -67,7 +67,6 @@ obj-y += block/
 obj-$(CONFIG_BOOTCOUNT_LIMIT) += bootcount/
 obj-$(CONFIG_CPU) += cpu/
 obj-y += crypto/
-obj-$(CONFIG_FPGA) += fpga/
 obj-y += hwmon/
 obj-y += misc/
 obj-y += pcmcia/
