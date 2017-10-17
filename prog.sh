@@ -39,7 +39,7 @@ then
 
 	#cp u-boot-sunxi-with-spl.bin ../u-boot-sunxi-with-spl.bin
         cd ../
-        rm prog.sh~
+        #rm prog.sh~
 	rm u-boot/.config
 	rm u-boot/System.map
 	rm u-boot/arch/arm/lib/asm-offsets.s
@@ -53,10 +53,10 @@ then
 	rm u-boot/u-boot-sunxi-with-spl.bin
 	rm u-boot/u-boot.bin
 	rm u-boot/u-boot.cfg
-	rm u-boot/u-boot.cfg.adhoc
+	#rm u-boot/u-boot.cfg.adhoc
 	rm u-boot/u-boot.cfg.configs
-	rm u-boot/u-boot.cfg.ok
-	rm u-boot/u-boot.cfg.suspects
+	#rm u-boot/u-boot.cfg.ok
+	#rm u-boot/u-boot.cfg.suspects
 	rm u-boot/u-boot.img
 	rm u-boot/u-boot.map
         rm u-boot/u-boot.lds
