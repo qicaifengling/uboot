@@ -323,4 +323,3 @@ source "fs/Kconfig"
 
 source "lib/Kconfig"
 
-source "test/Kconfig"

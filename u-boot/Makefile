@@ -682,10 +682,10 @@ libs-y += cmd/
 libs-y += common/
 libs-$(CONFIG_API) += api/
 #libs-$(CONFIG_HAS_POST) += post/
-libs-y += test/
-libs-y += test/dm/
-libs-$(CONFIG_UT_ENV) += test/env/
-libs-$(CONFIG_UT_OVERLAY) += test/overlay/
+#libs-y += test/
+#libs-y += test/dm/
+#libs-$(CONFIG_UT_ENV) += test/env/
+#libs-$(CONFIG_UT_OVERLAY) += test/overlay/
 
 libs-y += $(if $(BOARDDIR),board/$(BOARDDIR)/)
 
