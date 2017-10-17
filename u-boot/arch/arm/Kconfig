@@ -868,13 +868,6 @@ config ARCH_UNIPHIER
 	help
 	  Support for UniPhier SoC family developed by Socionext Inc.
 	  (formerly, System LSI Business Division of Panasonic Corporation)
-
-config STM32
-	bool "Support STM32"
-	select CPU_V7M
-	select DM
-	select DM_SERIAL
-
 config ARCH_ROCKCHIP
 	bool "Support Rockchip SoCs"
 	select OF_CONTROL
