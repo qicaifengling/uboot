@@ -1,4 +1,5 @@
 #!/bin/bash
+#第二步：下载uboot代码并编译,如果成功，会在主目录下有u-boot.bin，在spl目录有u-boot-spl.bin
 DIR=u-boot
 CONFIG_FILE1=u-boot//configs//LicheePi_Zero_defconfig
 CONFIG_FILE2=u-boot//configs//LicheePi_Zero_800x480LCD_defconfig
@@ -36,8 +37,9 @@ then
         find . -name "*.srec"  | xargs rm -f
         find . -name "*.sym"  | xargs rm -f
         find . -name "*.dtb"  | xargs rm -f
-
-	#cp u-boot-sunxi-with-spl.bin ../u-boot-sunxi-with-spl.bin
+#第三步：生成boot.scr
+	mkimage -C none -A arm -T script -d ../boot.cmd ../boot.scr
+	cp u-boot-sunxi-with-spl.bin ../u-boot-sunxi-with-spl.bin
         cd ../
         #rm prog.sh~
 	rm u-boot/.config

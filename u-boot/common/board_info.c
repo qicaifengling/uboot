@@ -17,6 +17,7 @@ int __weak checkboard(void)
  */
 int __weak show_board_info(void)
 {
+       
 #ifdef CONFIG_OF_CONTROL
 	DECLARE_GLOBAL_DATA_PTR;
 	const char *model;
@@ -24,7 +25,10 @@ int __weak show_board_info(void)
 	model = fdt_getprop(gd->fdt_blob, 0, "model", NULL);
 
 	if (model)
+		{
+		printf("\nGaoXing\n");
 		printf("Model: %s\n", model);
+		}
 #endif
 
 	return checkboard();
